@@ -32,8 +32,7 @@ pipeline{
         // Stage 3 publish the artifacts to Nexus
         stage ('Publish to Nexus'){
             steps {
-                nexusArtifactUploader 
-                artifacts: 
+                nexusArtifactUploader artifacts: 
                 [[artifactId: '${ArtifactId}', 
                 classifier: '', 
                 file: 'target/LVSDevOps-0.0.9.war', 
