@@ -39,7 +39,7 @@ pipeline{
                 type: 'war']], 
                 credentialsId: '3e17c3f7-d5b9-41a4-8a1c-c790a6957235', 
                 groupId: '${GroupId}', 
-                nexusUrl: '3.68.223.97:8081', 
+                nexusUrl: '3.69.169.134:8081', 
                 nexusVersion: 'nexus3', 
                 protocol: 'http', 
                 repository: 'LVS-DevOps-SNAPSHOT', 
