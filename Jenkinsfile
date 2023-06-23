@@ -34,7 +34,7 @@ pipeline{
             steps {
                 nexusArtifactUploader 
                 artifacts: [[
-                artifactId: 'LVSDevOps', 
+                artifactId: '${ArtifactId}', 
                 classifier: '', 
                 file: 'target/LVSDevOps-0.0.9.war', 
                 type: 'war']], 
