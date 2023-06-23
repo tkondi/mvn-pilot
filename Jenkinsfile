@@ -33,18 +33,18 @@ pipeline{
         stage ('Publish to Nexus'){
             steps {
                 nexusArtifactUploader 
-                artifacts: [[
-                artifactId: '${ArtifactId}', 
+                artifacts: 
+                [[artifactId: '${ArtifactId}', 
                 classifier: '', 
                 file: 'target/LVSDevOps-0.0.9.war', 
                 type: 'war']], 
                 credentialsId: '3e17c3f7-d5b9-41a4-8a1c-c790a6957235', 
-                groupId: 'com.lvsdevops', 
+                groupId: '${GroupId}', 
                 nexusUrl: '172.20.10.223:8081', 
                 nexusVersion: 'nexus3', 
                 protocol: 'http', 
                 repository: 'LVS-DevOps-SNAPSHOT', 
-                version: '0.0.9'
+                version: '${Version}'
             }
         }
 
