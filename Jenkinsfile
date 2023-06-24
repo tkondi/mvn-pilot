@@ -43,7 +43,7 @@ pipeline{
                 nexusVersion: 'nexus3', 
                 protocol: 'http', 
                 repository: 'LVS-DevOps-SNAPSHOT', 
-                version: '${Version}'
+                version: '0.0.9-SNAPSHOT'
             }
         }
 
