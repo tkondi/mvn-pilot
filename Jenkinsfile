@@ -35,7 +35,7 @@ pipeline{
                 nexusArtifactUploader artifacts: 
                 [[artifactId: '${ArtifactId}', 
                 classifier: '', 
-                file: 'target/LVSDevOps-0.0.9.war', 
+                file: 'target/LVSDevOps-0.0.9-SNAPSHOT.war', 
                 type: 'war']], 
                 credentialsId: '3e17c3f7-d5b9-41a4-8a1c-c790a6957235', 
                 groupId: '${GroupId}', 
