@@ -42,7 +42,7 @@ pipeline{
                 nexusUrl: '3.69.169.134:8081', 
                 nexusVersion: 'nexus3', 
                 protocol: 'http', 
-                repository: 'LVS-DevOps-SNAPSHOT', 
+                repository: 'LVS-DevOps-SNAPSHOT/', 
                 version: '${Version}'
             }
         }
