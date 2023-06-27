@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Vinay's DevOps Lab</title>
+    <title>Ted's DevOps Lab</title>
 
 
     <!-- Custom styles for this template -->
@@ -52,7 +52,7 @@
 <div class="jumbotron">
     <div class="container">
         <h1>Hello</h1>
-        <p>This is Vinays DevOps AWS Lab</p>
+        <p>This is Ted's DevOps AWS Lab</p>
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
         <p><a class="btn btn-primary btn-lg" role="button">Success!! more &raquo;</a></p>
     </div>
@@ -91,7 +91,7 @@
     <hr>
 
     <footer>
-        <p>&copy; vinay's devops lab 2020-2021</p>
+        <p>&copy; Ted's devops lab 2020-2021</p>
     </footer>
 </div> <!-- /container -->
 
