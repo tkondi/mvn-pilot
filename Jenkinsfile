@@ -53,7 +53,7 @@ pipeline{
         }
 
          // Stage4 : Print some informations
-        stage ('Sonarqube Analysis'){
+        stage ('Print informations'){
             steps {
                 echo "Artifact ID is '${ArtifactId}'"
                 echo "Version is '${Version}'"
@@ -63,7 +63,7 @@ pipeline{
         }
 
         // Stage5 : Deploy
-        stage ('Sonarqube Analysis'){
+        stage ('Deploy'){
             steps {
                 echo "Deploying..."
                 sshPublisher(publishers: 
