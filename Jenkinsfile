@@ -54,7 +54,7 @@ pipeline{
                 }
             }
         }
-
+        /*
          // Stage4 : Print some informations
         stage ('Print informations'){
             steps {
@@ -64,7 +64,7 @@ pipeline{
                 echo "Name is '${Name}'"
             }
         }
-
+        
         // Stage5 : Deploy
         stage ('Deploy to Tomcat'){
             steps {
@@ -78,7 +78,7 @@ pipeline{
                     verbose: false)])
             }
         }
-
+        */
         // Stage6 : Deploying to docker
         stage ('Deploy to Docker'){
             steps {
