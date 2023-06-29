@@ -21,10 +21,13 @@ pipeline{
             }
         }
 
-        // Stage2 : Testing
-        stage ('Test'){
+        // Stage2 : Publish the source code to Sonarqube
+        stage ('Sonarqube Analysis'){
             steps {
-                echo ' testing......'
+                echo ' Source code published to Sonarqube for SCA......'
+                withSonarQubeEnv('sonarqube'){ // You can override the credential to be used
+                     sh 'mvn sonar:sonar'
+                }
 
             }
         }
@@ -89,19 +92,6 @@ pipeline{
                     verbose: false)])
             }
         }
-
-
-        // Stage3 : Publish the source code to Sonarqube
-        /*stage ('Sonarqube Analysis'){
-            steps {
-                echo ' Source code published to Sonarqube for SCA......'
-                withSonarQubeEnv('sonarqube'){ // You can override the credential to be used
-                     sh 'mvn sonar:sonar'
-                }
-
-            }
-        }
-        */
         
         
     }
