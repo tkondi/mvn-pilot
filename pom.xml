@@ -4,7 +4,7 @@
   <groupId>com.lvsdevops</groupId>
   <artifactId>LVSDevOps</artifactId>
   <packaging>war</packaging>
-  <version>0.0.21/version>
+  <version>0.0.20</version>
   <name>LVSDevOps</name>
   <url>http://maven.apache.org</url>
   <dependencies>
